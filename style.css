@@ -69,6 +69,15 @@ button {
     border-radius: 40px;;
 }
 
+button:hover {
+    background: #d43220;
+}
+
+button:active {
+    background: #ff5945;
+}
+
+
 ul li {
     list-style: none;
     font-size: 17px;
