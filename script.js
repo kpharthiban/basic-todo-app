@@ -28,6 +28,13 @@ listContainer.addEventListener("click", function(e) {
     }
 }, false);
 
+// Added function where pressing "Enter" in the input box will call addTask()
+inputBox.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        addTask();
+    }
+})
+
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);
 }
